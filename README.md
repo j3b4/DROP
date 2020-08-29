@@ -1,5 +1,7 @@
 # Welcome to Evennia!
 
+News. I have forked this repo to start work. ~j3b4
+
 This is your game directory, set up to let you start with
 your new game right away. An overview of this directory is found here:
 https://github.com/evennia/evennia/wiki/Directory-Overview#the-game-directory
