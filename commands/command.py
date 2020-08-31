@@ -31,6 +31,25 @@ class Command(BaseCommand):
 
     """
 
+class CmdAbilities(Command):
+    """
+    List abilities
+
+    Usage:
+        abilities
+
+    Displays a list ofyour current ability values.
+    """
+    key = "abilities"
+    aliases = ["abi"]
+    lock = "cmd:all()"
+    help_category = "General"
+
+    def func(self):
+        "main function of the command"
+        str, agi, mag = self.caller.get_abilities()
+        string = "STR: %s, AGI: %s, MAG: %s" % (str, agi, mag)
+        self.caller.msg(string)
     pass
 
 
