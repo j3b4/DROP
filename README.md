@@ -5,13 +5,14 @@ Stay tuned.
 
 # Next Projects Generally
 
-0. Character generation command that transforms a regular character into rip-off
+  1. Character generation command that transforms a regular character into rip-off
     artists.
-   
-   0. ability scores
-   0. coins, gold, silver, copper, electrum, platinum
-   0. gems etc
-   0. inventory
+      1. ability scores
+      1. coins, gold, silver, copper, electrum, platinum
+      1. gems etc
+      1. inventory
+  2. Equipment wielding - to allow player to select which equipment is active
+    1. armour, weapons, etc.
 
 
 
