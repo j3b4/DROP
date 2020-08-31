@@ -3,7 +3,10 @@
 We will have FISHING!! Tricks, traps and deadly Rock Paper Scissors dueling.
 Stay tuned.
 
+For a detailed specification see [[specs.md]]
+
 # Next Projects Generally
+This is a very rough to do list.  Feel free to edit and format in ways to indicate interest/objection help set priorities etc.
 
 ## DR features
 The following features are based on the Dungeon Robber rules. They can be tweaked as we develop.
