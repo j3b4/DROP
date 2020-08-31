@@ -7,7 +7,6 @@ Stay tuned.
 
 0. Character generation command that transforms a regular character into rip-off
     artists.
-    
     0. ability scores
     0. coins, gold, silver, copper, electrum, platinum
     0. gems etc
