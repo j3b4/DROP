@@ -47,8 +47,9 @@ class CmdAbilities(Command):
 
     def func(self):
         "main function of the command"
-        str, agi, mag = self.caller.get_abilities()
-        string = "STR: %s, AGI: %s, MAG: %s" % (str, agi, mag)
+        str, int, wis, dex, con, cha = self.caller.get_abilities()
+        string = ("STR: %s, INT: %s, WIS: %s, DEX: %s, CON: %s, " 
+                "CHA: %s") % (str, int, wis, dex, con, cha)
         self.caller.msg(string)
     pass
 

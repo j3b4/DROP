@@ -29,5 +29,5 @@ class TestAbilities(CommandTest):
     character_typeclass = Character
 
     def test_simple(self):
-        self.call(CmdAbilities(), "", "STR: 5, AGI: 4, MAG: 2")
+        self.call(CmdAbilities(), "", "STR: 0, INT: 0, WIS: 0, DEX: 0, CON: 0, CHA: 0")
 

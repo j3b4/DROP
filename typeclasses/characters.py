@@ -37,15 +37,19 @@ class Character(DefaultCharacter):
         """
 
         # set persistent attributes
-        self.db.strength = 5
-        self.db.agility = 4
-        self.db.magic = 2
+        self.db.strength = 0
+        self.db.intelligence = 0
+        self.db.wisdom = 0
+        self.db.dexterity = 0
+        self.db.constitution = 0
+        self.db.charisma = 0
 
     def get_abilities(self):
         """
         Simple access method to return ability
         scores as a tuple (str,agi,mag)
         """
-        return self.db.strength, self.db.agility, self.db.magic
+        return ( self.db.strength, self.db.intelligence, self.db.wisdom, 
+            self.db.dexterity, self.db.constitution, self.db.charisma)
 
     pass
