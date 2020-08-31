@@ -5,9 +5,13 @@ Stay tuned.
 
 # Next Projects Generally
 
-Implement a character generation command that transforms a regular character into one who
-can go delving. Delving is the act of losing oneself in a Dungeon in the hopes of making
-it rich.
+0. Character generation command that transforms a regular character into rip-off
+    artists.
+    
+    0. ability scores
+    0. coins, gold, silver, copper, electrum, platinum
+    0. gems etc
+    0. inventory
 
 
 
