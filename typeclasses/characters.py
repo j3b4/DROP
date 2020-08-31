@@ -31,4 +31,21 @@ class Character(DefaultCharacter):
 
     """
 
+    def at_object_creation(self):
+        """
+        Called only at initial creation. This is simple example.
+        """
+
+        # set persistent attributes
+        self.db.strength = 5
+        self.db.agility = 4
+        self.db.magic = 2
+
+    def get_abilities(self):
+        """
+        Simple access method to return ability
+        scores as a tuple (str,agi,mag)
+        """
+        return self.db.strength, self.db.agility, self.db.magic
+
     pass
