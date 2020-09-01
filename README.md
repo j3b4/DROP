@@ -3,7 +3,7 @@
 We will have FISHING!! Tricks, traps and deadly Rock Paper Scissors dueling.
 Stay tuned.
 
-For a detailed specification see [[specs.md]]
+For a detailed specification see files in the /DESIGN folder.
 
 # Next Projects Generally
 This is a very rough to do list.  Feel free to edit and format in ways to indicate interest/objection help set priorities etc.
