@@ -66,7 +66,6 @@ I suspect this entire thing can be implemented with Evmenu.
         - nothing
         - monster
         - trap
-        - stairs
 1. "backtrack" cmd
     Attempt to return to Dungeon Entrance. Diffilculty affected by "distance"
     * May result in:
