@@ -70,13 +70,13 @@ I suspect this entire thing can be implemented with Evmenu.
 1. "trap" feature
     traps have random chance of causing an effect, or damaging the player
     if survived or avoided, player may:
-    "explore" or 
-    "backtrack"
+    	- "explore" or 
+    	- "backtrack"
 1. "stairs" feature
     Stairs appear to go "up" or "down" one level. 
-    Up reduces "depth" and sets "distance" to max of the higher level.
-    Down increases "depth" sets "distance" to zero;
-    distance "zero" always contains stairs up.
+    	- Up reduces "depth" and sets "distance" to max of the higher level.
+    	- Down increases "depth" sets "distance" to zero;
+    	- distance "zero" always contains stairs up.
 1. "clue" feature
     A clue is a bit of enticing or ominous text attached to a choice of passage
     choosing the passage with a "clue" results in a random "effect".
