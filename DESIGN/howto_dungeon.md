@@ -1,27 +1,56 @@
 # How to Make the Dungeon
 
-Use pseudo code to explain a dungeon engine.
+Use pseudo code to explain a dungeon engine. 
 
-# Pure instanced D. (like Dungeon Robber)
+# Dungeon State Model
+There are two or three models I can think of using which I'll
+speculate about below and list in order of perceived difficulty.
+The Appendixie project under Evennia 0.6 was closest to the second
+option - purely permanent. 
+
+## Pure instanced D. (like Dungeon Robber)
 Nothing is saved. Each room or passage is randomly created and disapears
 as soon as a character moves through it. Getting back to the entrance or
-getting lost is purely abstracted.
+getting lost is purely abstracted. There is no need to build rooms at all
+as I belive EvMenu could handle all navigation. Only treasure and loot 
+objects would be added to the database.
 
-## Generation algorithm
+## Pure Permanant Building
+Every room the player creates remains.  When they choose to 'backtrack' they
+must use their own memory to find their way back. If they leave and return
+to the dungeon the rooms and passages are just as they left them. (Though 
+optionally contents and features might re-spawn).  If other players attend
+they will find the same dungeon. 
+
+One think I learned from the Appendixie it's relatively easy to build random
+dungeons in tree pattern where branches never merge with each other. However 
+to have logical dungeons that could exist in cartesian geometry... would be
+more difficult. I have thought that if you don't care about logic, you could
+build arbitrary links between branches at random intervals.
+
+## Temporary Built Dungeons
+Dungeon's persist for the length of a Dungeon run or delve. Returning to 
+town wipes out the instancce. It's less clear to me how to do this. Maybe 
+each room added to the DB would be tagged based on the player and or dungeon
+run that created it. At the end of the run, all rooms and exits with those 
+tags are deleted, but the player could keep their loot. This could lead to other
+interesting results if players are allowed to team up.
+
+# Generation algorithm for pure instanced Dungeons
 Dungeons have two coordinates only distance and depth.
 Distance refers to number of rooms away from the entrance or last known
 stairway up. Depth is number of stairs up to get to surface (town).
 
-### Dungeon Routine
+## Dungeon Routine (applies to most Pure instanced)
 I suspect this entire thing can be implemented with Evmenu.
 1. ENTRANCE - Starts at dungeon 
     * safe place; player choosed to "explore" or "leave"
 1. "leave" exit to surface or town
 1. "explore" cmd 
     * distance increases by 1 and player moves to a new random location type
-        - "room"
-	    - "passage"
-        - "junction" 
+    	- "room"
+	- "passage"
+	- "junction" 
 1. "room" place
     * May contain
         - "nothing"
