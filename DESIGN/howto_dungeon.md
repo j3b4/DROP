@@ -61,7 +61,7 @@ I suspect this entire thing can be implemented with Evmenu.
     a room with nothing has 0-3 exits which the player may choose in addition
     to "backtrack". An exit is either a passage->"explore" or a "door" feature
 1. "monster" encounter
-    A monster will attack unless player neutralizes it or escapes. Typical
+    * A monster will attack unless player neutralizes it or escapes. Typical
     choices (some are dependent on skills or equipment):
         - sneak past
         - run away
@@ -69,11 +69,11 @@ I suspect this entire thing can be implemented with Evmenu.
         - attack
 1. "trap" feature
     traps have random chance of causing an effect, or damaging the player
-    if survived or avoided, player may:
+    * if survived or avoided, player may:
     	- "explore" or 
     	- "backtrack"
 1. "stairs" feature
-    Stairs appear to go "up" or "down" one level. 
+    * Stairs appear to go "up" or "down" one level. 
     	- Up reduces "depth" and sets "distance" to max of the higher level.
     	- Down increases "depth" sets "distance" to zero;
     	- distance "zero" always contains stairs up.
@@ -83,7 +83,7 @@ I suspect this entire thing can be implemented with Evmenu.
 1. "door" feature/exit
     A door is a feature and a choice. A player can always choose to ignore the
     door and either continue/explore (unless dead end) or backtrack/wander 
-    Otherwise the player may try to:
+    * Otherwise the player may try to:
         - "force door" it open
         - "unlock door" with key or thief tools
         - "listen door" 
