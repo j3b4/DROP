@@ -48,7 +48,7 @@ I suspect this entire thing can be implemented with Evmenu.
 1. "leave" exit to surface or town
 1. "explore" cmd 
     * distance increases by 1 and player moves to a new random location type
-        - "explore"
+        - "room"
         - "passage"
         - "junction" 
 1. "room" place
