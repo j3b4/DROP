@@ -10,15 +10,14 @@ This is a very rough to do list.  Feel free to edit and format in ways to indica
 ## Create an EvMenu Dungeon
   A pure instanced Dungeron; see [How to Dungeon](./DESIGN/howto_dungeon.md) for an idea of what I'm going for here. 
   This will require me to re-learn evmenu.
-  Steps:
   
-    1. Complete the NPC shop evmenu tutorial.
-        1. tweak the NPC shop to be usable in the game for buying gear and selling off dungeon loot.
-    1. Use evmenu knowledge to build menu based combat in a linear Dungeon
-        1. Dungeon choices are only continue or backtrack
-        2. Dungeon feature is only monster or nothing
-    1. Try to include Monster combat too.
-    1. Review the results and consider whether to continue down this road.
+  1. Complete the NPC shop evmenu tutorial.
+      1. tweak the NPC shop to be usable in the game for buying gear and selling off dungeon loot.
+  1. Use evmenu knowledge to build menu based combat in a linear Dungeon
+      1. Dungeon choices are only continue or backtrack
+      2. Dungeon feature is only monster or nothing
+  1. Try to include Monster combat too.
+  1. Review the results and consider whether to continue down this road.
   
   Thoughts: this would be a good place to stop and consider whether the purely instanced menu based Dungeon is good enough or whether to switch to 
   semi-permanent dungeon generation.
